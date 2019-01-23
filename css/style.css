@@ -1,8 +1,13 @@
+
+/* custom font face from local */
+
 @font-face
 {
     font-family: "digital7";
     src:url("../fonts/digital-7.ttf")
 }
+
+/* animations for popping the screens */
 
 @keyframes push{
     50%  {transform: scale(0.8);}
@@ -20,6 +25,22 @@ body{
 .center{
     text-align: center;
 }
+
+
+
+/* design of logo section, main screen */
+
+#logo{
+    width: 40vw;
+    padding-left: 29vw;
+    padding-right: 29vw;
+    animation-name: push;
+    animation-duration:  1s;
+}
+
+
+/* design of menu section */
+
 .head-links{
     display: inline;
     align-content: center;
@@ -28,6 +49,7 @@ body{
 .head-links ul li{
     display: inline;
 }
+
 h1{
     display: inline;
     font-size: large;
@@ -43,13 +65,7 @@ h1{
     align-self: center;
     vertical-align:middle;
 }
-#logo{
-    width: 40vw;
-    padding-left: 29vw;
-    padding-right: 29vw;
-    animation-name: push;
-    animation-duration:  1s;
-}
+
 #menu{
     align-self: center;
     margin-top: 5vh;
@@ -60,6 +76,14 @@ h1{
     animation-name: push;
     animation-duration:  1s;
 }
+
+
+
+
+
+
+
+/* for hiding and showing only one screen at a time */
 .hide-not-target:not(:target) {
     display: none;
 }
