@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/style1.css" type="text/css"></head>
+
     </head>
     <body>
         
@@ -20,7 +22,7 @@
             
             <!-- Main CTF -->
             <div class="center hide-not-target" id="menu">
-                <div class="head-links" style="display:inline;">
+                <div class="head-links" >
                         <ul>
                                 <!-- <li><h1>Leaderboard</h1></li> -->
                                 <li>
@@ -30,19 +32,47 @@
                                 </li>
                                 <!-- <li><h1>Questions</h1></li> -->
                         </ul>
-
-                        
                 </div>
-        </div>
         
+               
+        
+
+          <br>
+          <br>      
+
+        <!-- Progress bar -->
+
+        <div class="progress">
+  
+  <div class="progress-track"></div>
+    
+  <div id="step1" class="progress-step" onClick=next1()>
+    Step One
+  </div>
+    
+  <div id="step2" class="progress-step" onClick=next2()>
+    Step Two
+  </div>
+    
+  <div id="step3" class="progress-step" onClick=next3()>
+    Step Three
+  </div>
+    
+  <div id="step4" class="progress-step" onClick=next4()>
+    Complete
+  </div>
+
+ </div>
+
+
+     </div>
+    </div>
     </body>
 
 
-    <script type="text/javascript">
-        if (document.location.hash == "" || document.location.hash == "#")
-          document.location.hash = "#main";
-    </script>
-
-
+ 
+<script src="js/script.js"></script>
+ 
+<script src="js/image.js"></script>
 
 </html>
